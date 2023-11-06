@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuenta Bancaria</title>
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon16.png"
+      sizes="16x16"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon32.png"
+      sizes="32x32"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon126.png"
+      sizes="256x256"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./win.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Banco XYZ</h1>
+    </header>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Cuentas</a></li>
+        <li><a href="#">Transferencias</a></li>
+        <li><a href="#">Préstamos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="cuerpo">
+      <div class="cuenta">
+        <h1>Cuenta Bancaria</h1>
+        <div class="cliente-info">
+          <p>Usuario: <br> <span id="username"></span></p>
+          <script>
+            document.getElementById("username").innerHTML = sessionStorage.getItem("username");
+          </script>
+        </div>
+        <div class="saldo">
+          <h2>Saldo Disponible:</h2>
+          <p id="saldo">$1.000.000</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

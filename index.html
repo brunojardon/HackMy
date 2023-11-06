@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon16.ico"
+      sizes="16x16"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon32.ico"
+      sizes="32x32"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon256.png"
+      sizes="256x256"
+      type="image/png"
+    />
+    <title>HackMy</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body onload="getPasswords()">
+    <div id="used">
+      <h2>Palabras usadas</h2>
+      <div id="usedWordDiv"></div>
+    </div>
+    <div class="form-container">
+      <h2>Inicie sesion</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="username">Usuario:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            value="Elena Martinez"
+            disabled
+          />
+        </div>
+        <div class="form-group">
+          <label for="pass">Contraseña:</label>
+          <input type="password" id="pass" name="pass" />
+        </div>
+        <div class="form-group">
+          <label for="repPass">Repita la Contraseña:</label>
+          <input type="text" id="repPass" name="repPass" />
+        </div>
+        <div>
+          <button id="ingresar">Ingresar</button>
+          <button id="generar">Generar</button>
+        </div>
+        <br />
+        <span id="error"></span>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
