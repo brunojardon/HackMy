@@ -1,4 +1,8 @@
+<div style='display: flex; flex-direction: column; align-items: center; width: 75%;'>
+
 # HackMy ![Logo](/src/images/favicon32.ico)
-Simple juego desarrollado en JavaScript. <br/>
+
 ![Preview](/src/images/preview.webp) <br />
-La idea es colocar o generar una contraseña y que otro jugador la repita, en caso que una letra coincida se coloreará en <span style='color: rgb(114, 255, 114);'>verde</span> de lo contrario se colorea de <span style='color: rgb(255, 26, 26);'>rojo</span> en la sección de palabras usadas.
+La idea es colocar o generar una contraseña y que otro jugador la repita, en caso que una letra coincida se coloreará en verde de lo contrario se colorea de rojo en la sección de palabras usadas.
+
+</div>
